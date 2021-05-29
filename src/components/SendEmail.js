@@ -36,7 +36,7 @@ const SendEmail = () => {
     setMsg("");
   };
   return (
-    <div class="email-form">
+    <div className="email-form">
       <form className="send-email" onSubmit={onSubmit}>
         <div className="form-control">
           <label>Name</label>

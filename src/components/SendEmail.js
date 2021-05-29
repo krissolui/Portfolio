@@ -1,7 +1,7 @@
 import { useState } from "react";
 import emailjs from "emailjs-com";
 
-const SendEmail = ({ onSend }) => {
+const SendEmail = () => {
   const [user_name, setName] = useState("");
   const [user_email, setEmail] = useState("");
   const [message, setMsg] = useState("");
@@ -22,7 +22,6 @@ const SendEmail = ({ onSend }) => {
       return;
     }
 
-    // onSend({ name, email, subject, message });
     emailjs.sendForm("service_96h4nxe", "template_sa4whz9", e.target, "user_Vlc3MZb3VjmdaXwvHCdfn").then(
       (result) => {
         console.log(result.text);

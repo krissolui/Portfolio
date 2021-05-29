@@ -1,10 +1,8 @@
-import SendEmail from "./SendEmail"
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import SendEmail from "./SendEmail";
 
 const ContactPage = () => {
-  const sendEmail = () => {
 
-  }
-  
   return (
     <div className="contact-page">
       <h3>CONTACT</h3>
@@ -12,11 +10,11 @@ const ContactPage = () => {
       <section class="contact-main">
         <div class="contact-info">
           <div class="sns">
-            <a href="#" class="btn sns-btn">
-              <i class="fab fa-github"></i>
+            <a href="https://github.com/krissolui" class="btn sns-btn">
+              <FaGithub />
             </a>
-            <a href="#" class="btn sns-btn">
-              <i class="fab fa-linkedin"></i>
+            <a href="https://www.linkedin.com/in/siu-on-lui-8b8888159/" class="btn sns-btn">
+              <FaLinkedin />
             </a>
           </div>
 
@@ -25,7 +23,7 @@ const ContactPage = () => {
           <p>Phone: +(852)6088 9331</p>
         </div>
 
-        <SendEmail onSend={sendEmail} />
+        <SendEmail />
       </section>
     </div>
   );

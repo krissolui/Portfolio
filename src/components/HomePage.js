@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import hong_kong_chester_ho_unsplash from "../images/hong_kong_chester_ho_unsplash.jpg";
 
 const HomePage = () => {
   return (
@@ -14,7 +15,7 @@ const HomePage = () => {
         </p>
         <div className="img">
           <img
-            src="../images/hong-kong-chester-ho-unsplash.jpg"
+            src={hong_kong_chester_ho_unsplash}
             alt="about me"
             className="reference-img"
           />

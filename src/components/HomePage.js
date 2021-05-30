@@ -22,36 +22,34 @@ const HomePage = () => {
         </div>
       </section>
 
-      <section className="casual"></section>
+      <section className="home-item casual"></section>
 
-      <section className="intro">
-        <div className="home-item intro-education">
-          <img src="" alt="" className="reference-img" />
-          <h2 className="text-secondary">Education</h2>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit,
-            similique. Exercitationem iste porro voluptate quibusdam! Reiciendis
-            consequuntur quidem rerum reprehenderit veniam pariatur commodi
-            quia? Numquam odio consequuntur delectus nulla deleniti.
-          </p>
-          <Link to="/education">
-            <button>Learn More</button>
-          </Link>
-        </div>
+      <section className="home-item intro-education">
+        <img src="" alt="" className="reference-img" />
+        <h2 className="text-secondary">Education</h2>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit,
+          similique. Exercitationem iste porro voluptate quibusdam! Reiciendis
+          consequuntur quidem rerum reprehenderit veniam pariatur commodi quia?
+          Numquam odio consequuntur delectus nulla deleniti.
+        </p>
+        <Link to="/education">
+          <button className="btn">Learn More</button>
+        </Link>
+      </section>
 
-        <div className="home-item intro-project">
-          <img src="" alt="" className="reference-img" />
-          <h2 className="text-secondary">Project</h2>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit,
-            similique. Exercitationem iste porro voluptate quibusdam! Reiciendis
-            consequuntur quidem rerum reprehenderit veniam pariatur commodi
-            quia? Numquam odio consequuntur delectus nulla deleniti.
-          </p>
-          <Link to="/projects">
-            <button>Learn More</button>
-          </Link>
-        </div>
+      <section className="home-item intro-project">
+        <img src="" alt="" className="reference-img" />
+        <h2 className="text-secondary">Project</h2>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit,
+          similique. Exercitationem iste porro voluptate quibusdam! Reiciendis
+          consequuntur quidem rerum reprehenderit veniam pariatur commodi quia?
+          Numquam odio consequuntur delectus nulla deleniti.
+        </p>
+        <Link to="/projects">
+          <button className="btn">Learn More</button>
+        </Link>
       </section>
     </div>
   );

@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import hong_kong_chester_ho_unsplash from "../images/hong_kong_chester_ho_unsplash.jpg";
+import hong_kong from "../images/hong_kong.jpg";
 
 const HomePage = () => {
   return (
@@ -14,11 +14,7 @@ const HomePage = () => {
           unde iure fugiat, id illo dicta mollitia nobis, neque iste illum?
         </p>
         <div className="img">
-          <img
-            src={hong_kong_chester_ho_unsplash}
-            alt="about me"
-            className="reference-img"
-          />
+          <img src={hong_kong} alt="about me" className="reference-img" />
         </div>
       </section>
 

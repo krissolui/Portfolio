@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import HomePage from "./components/HomePage";
 import EducationPage from "./components/EducationPage";
 import ProjectsPage from "./components/ProjectsPage";
@@ -8,16 +8,18 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-    <Router>
-      <div className="container">
+    <div className="min-h-screen flex flex-col justify-between">
+      <Router>
         <Header />
-        <Route path="/" exact component={HomePage} />
-        <Route path="/education" component={EducationPage} />
-        <Route path="/projects" component={ProjectsPage} />
-        <Route path="/contact" component={ContactPage} />
+        <Switch>
+          <Route path="/" exact component={HomePage} />
+          <Route path="/education" component={EducationPage} />
+          <Route path="/projects" component={ProjectsPage} />
+          <Route path="/contact" component={ContactPage} />
+        </Switch>
         <Footer />
-      </div>
-    </Router>
+      </Router>
+    </div>
   );
 }
 

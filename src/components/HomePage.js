@@ -4,7 +4,7 @@ import hong_kong from "../images/hong_kong.jpg";
 
 const HomePage = () => {
   return (
-    <main className="home-page flex-grow bg-gray-500 text-white text-center p-2">
+    <main className="home-page flex-grow bg-gray-500 text-white text-center p-2 flex flex-col justify-center items-center">
       <h3 className="text-4xl font-bold cursive text-yellow-600 sm:text-6xl">
         HOME
       </h3>

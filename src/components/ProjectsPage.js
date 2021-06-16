@@ -2,7 +2,7 @@ import Project from "./Project";
 
 const ProjectsPage = () => {
   return (
-    <main className="home-page flex-grow bg-gray-500 text-center p-2">
+    <main className="home-page flex-grow bg-gray-500 text-center p-2 flex flex-col justify-center items-center">
       <h3 className="text-4xl font-bold cursive text-yellow-600 mb-4 sm:text-6xl">
         PROJECTS
       </h3>

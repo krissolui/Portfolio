@@ -68,7 +68,7 @@ const EducationPage = () => {
 
             <div className="w-full text-center space-y-3 md:inline-flex md:justify-evenly md:items-start md:space-x-3 md:space-y-0">
               <div className="skillsets flex-1 border-2 border-dotted rounded-3xl pb-2">
-                <h3 className="text-secondary text-xl font-semibold mb-2 md:text-2xl">
+                <h3 className="text-secondary text-xl font-semibold underline mb-2 md:text-2xl">
                   Languages/Frameworks
                 </h3>
                 <ul className="skills">
@@ -103,7 +103,7 @@ const EducationPage = () => {
               </div>
 
               <div className="skillsets flex-1 border-2 border-dotted rounded-3xl pb-2">
-                <h3 className="text-secondary text-xl font-semibold mb-2 md:text-2xl">
+                <h3 className="text-secondary text-xl underline font-semibold mb-2 md:text-2xl">
                   Tools/Skills
                 </h3>
                 <ul className="skills">

@@ -5,7 +5,7 @@ const ProjectDetail = ({ index, gitLink, viewLink, description }) => {
 
   return (
     <div className="absolute bottom-0 h-full w-full flex flex-col justify-evenly items-center text-transparent hover:bg-gray-200 hover:opacity-80 hover:text-purple-700">
-      <p className="text-2xl font-semibold">{description}</p>
+      <p className="text-2xl font-semibold px-2">{description}</p>
       <div className="w-full flex justify-evenly items-center">
         <a
           href={gitLink}

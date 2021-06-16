@@ -12,3 +12,14 @@
   margin-right: auto;
   border-radius: 5px;
 }
+
+table,
+th,
+td {
+  border: 1px solid white;
+}
+
+td {
+  border: 1px dashed white;
+  padding: 0 0.5rem;
+}

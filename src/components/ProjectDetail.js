@@ -1,17 +1,24 @@
 import { FaGithub, FaEye } from "react-icons/fa";
 // import { useState } from "react";
 
-const ProjectDetail = ({ index, onMouseOut, onMouseEnter }) => {
-//   const [hover, setHover] = useState(true);
+const ProjectDetail = ({ index, gitLink, viewLink }) => {
+  //   const [hover, setHover] = useState(true);
 
   return (
-    <div onMouseEnter={onMouseEnter} onMouseOut={onMouseOut}>
-      This is detail of Project {index}
-      <a href="http://" target="_blank">
-        <FaGithub />
+    <div className="absolute bottom-0 h-full w-full flex justify-evenly items-center text-transparent hover:bg-gray-200 hover:opacity-80 hover:text-purple-700">
+      <a
+        href={gitLink}
+        target="_blank"
+        className="text-6xl hover:text-yellow-700 m-3"
+      >
+        <FaGithub className="inline" />
       </a>
-      <a href="http://" target="_blank">
-        <FaEye />
+      <a
+        href={viewLink}
+        target="_blank"
+        className="text-6xl hover:text-yellow-700 m-3"
+      >
+        <FaEye className="inline" />
       </a>
     </div>
   );

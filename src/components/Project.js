@@ -1,37 +1,13 @@
-import { useState } from "react";
 import ProjectDetail from "./ProjectDetail";
+import desk from "../images/desk.jpg";
 
-const Project = ({ index }) => {
-  const [hover, setHover] = useState(false);
-
-  const onMouseEnter = (event) => {
-    event.target.style.background = "red";
-    setHover(true);
-    console.log({ index }, hover);
-  };
-  const onMouseOut = (event) => {
-    event.target.style.background = "";
-    setHover(false);
-    console.log({ index }, hover);
-  };
-
+const Project = ({ index, gitLink, viewLink }) => {
   return (
     <>
-      <li
-        className="project-item"
-        onMouseEnter={onMouseEnter}
-        onMouseOut={onMouseOut}
-      >
-        Project {index}
-        {/* <ProjectDetail index={index} display={hover} /> */}
-        {hover && (
-          <ProjectDetail
-            index={index}
-            onMouseOut={onMouseOut}
-            onMouseEnter={onMouseEnter}
-          />
-        )}
-      </li>
+      <div className="project-item m-2 relative sm:m-3 lg:m-4">
+        <img src={desk} alt="" className="max-w-lg w-full mx-auto " />
+        <ProjectDetail index={index} gitLink={gitLink} viewLink={viewLink} />
+      </div>
     </>
   );
 };

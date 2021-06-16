@@ -18,12 +18,15 @@ const Footer = () => {
 
         <div>
           <div className="sns inline-flex text-3xl space-x-3">
-            <a href="https://github.com/krissolui" className="btn sns-btn">
+            <a
+              href="https://github.com/krissolui"
+              className="btn sns-btn hover:text-yellow-600"
+            >
               <FaGithub />
             </a>
             <a
               href="https://www.linkedin.com/in/siu-on-lui-8b8888159/"
-              className="btn sns-btn"
+              className="btn sns-btn hover:text-yellow-600"
             >
               <FaLinkedin />
             </a>

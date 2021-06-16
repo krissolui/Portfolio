@@ -3,7 +3,7 @@ import SendEmail from "./SendEmail";
 
 const ContactPage = () => {
   return (
-    <main className="home-page flex-grow bg-gray-500 text-white text-center p-2 flex flex-col justify-center items-center">
+    <main className="home-page flex-grow bg-purple-200 text-purple-700 text-center p-2 flex flex-col justify-center items-center">
       <h3 className="text-4xl font-bold cursive text-yellow-600 mb-4 sm:text-6xl">
         CONTACT
       </h3>

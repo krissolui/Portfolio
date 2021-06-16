@@ -44,7 +44,7 @@ const SendEmail = () => {
   };
   return (
     <div className="email-form">
-      <form className="send-email" onSubmit={onSubmit}>
+      <form className="send-email text-purple-700" onSubmit={onSubmit}>
         <div className="form-control mb-2">
           <label className="mr-2">Name:</label>
           <input
@@ -53,7 +53,7 @@ const SendEmail = () => {
             placeholder="Your Full Name"
             value={user_name}
             onChange={(e) => setName(e.target.value)}
-            className="text-black rounded-md border border-solid border-yellow-600"
+            className="text-gray-700 rounded-md border border-solid border-purple-700"
           />
         </div>
         <div className="form-control mb-2">
@@ -64,7 +64,7 @@ const SendEmail = () => {
             placeholder="Your Email Address"
             value={user_email}
             onChange={(e) => setEmail(e.target.value)}
-            className="text-black rounded-md border border-solid border-yellow-600"
+            className="text-gray-700 rounded-md border border-solid border-purple-700"
           />
         </div>
         <div className="form-control h-40 mb-2">
@@ -73,14 +73,14 @@ const SendEmail = () => {
             placeholder="Your Message"
             value={message}
             onChange={(e) => setMsg(e.target.value)}
-            className="w-full h-full text-black rounded-lg border border-solid border-yellow-600"
+            className="w-full h-full text-gray-700 rounded-lg border border-solid border-purple-700"
           />
         </div>
 
         <input
           type="submit"
           value="Send Email"
-          className="btn py-2 px-4 my-1 rounded-lg border border-yellow-600 shadow-lg font-medium bg-gray-100 text-yellow-600 hover:bg-yellow-600 hover:text-white hover:border-gray-300"
+          className="btn py-2 px-4 my-1 rounded-lg border border-purple-700 shadow-lg font-medium bg-gray-100 text-purple-700 hover:bg-purple-700 hover:text-white hover:border-gray-300"
         />
       </form>
     </div>

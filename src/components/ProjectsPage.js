@@ -10,15 +10,15 @@ const ProjectsPage = () => {
       <div className="projects-list max-w-7xl px-4 mx-auto grid sm:grid-cols-2 lg:grid-cols-3">
         <Project
           index="1"
-          gitLink=""
-          viewLink=""
+          gitLink="https://github.com/krissolui/krissolui.github.io"
+          viewLink="/"
           img="hello_world"
           description="This portfolio you are look at!"
         />
         <Project
           index="2"
           gitLink=""
-          viewLink=""
+          viewLink="http://ecefyp64.infinityfreeapp.com/"
           img="plug"
           description="FYP: Web UI for our power tracker"
         />

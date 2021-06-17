@@ -41,7 +41,12 @@ const SendEmail = () => {
     setName("");
     setEmail("");
     setMsg("");
+
+    const toDefaultPage = () => {
+      return;
+    };
   };
+
   return (
     <div className="email-form">
       <form className="send-email text-purple-700" onSubmit={onSubmit}>

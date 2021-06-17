@@ -1,7 +1,7 @@
 import { FaGithub, FaEye } from "react-icons/fa";
 
-const ProjectDetail = ({ key, githubLink, viewLink, description }) => {
-  if (!description) description = `Project ${key}`;
+const ProjectDetail = ({ githubLink, viewLink, description }) => {
+  if (!description) description = `Project`;
 
   return (
     <div className="absolute bottom-0 h-full w-full flex flex-col justify-evenly items-center text-transparent hover:bg-gray-200 hover:opacity-80 hover:text-purple-700">

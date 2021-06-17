@@ -7,7 +7,7 @@ const Footer = () => {
     <footer className="bg-purple-700 pt-4 pb-2 text-white text-center flex-col justify-center items-center">
       <div className="max-w-screen-md mx-auto flex flex-col items-center md:flex-row md:justify-evenly">
         <div className="logo w-32 mx-auto md:mx-0">
-          <Link to="/" exact onClick={() => window.scrollTo(0, 0)}>
+          <Link to="/" exact="true" onClick={() => window.scrollTo(0, 0)}>
             <img
               src={owl}
               alt="Owl by Ben Davis from the Noun Project"

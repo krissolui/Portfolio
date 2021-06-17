@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import ProjectDetail from "./ProjectDetail";
 import sanityClient from "../client";
 
-const Project = ({ slug, key }) => {
+const Project = ({ slug }) => {
   const [project, setProject] = useState(null);
 
   useEffect(() => {
@@ -27,7 +27,7 @@ const Project = ({ slug, key }) => {
       setProject(data[0]);
     };
     getProject();
-  }, []);
+  }, [slug]);
 
   if (!project) return <></>;
 
@@ -39,7 +39,6 @@ const Project = ({ slug, key }) => {
         className="max-w-lg w-full mx-auto "
       />
       <ProjectDetail
-        key={key}
         githubLink={project.githubLink}
         viewLink={project.link}
         description={project.description}

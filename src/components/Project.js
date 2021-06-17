@@ -1,30 +1,48 @@
+import { useState, useEffect } from "react";
 import ProjectDetail from "./ProjectDetail";
-import desk from "../images/desk.jpg";
-import hello_world from "../images/hello_world.jpg";
-import plug from "../images/plug.jpg";
+import sanityClient from "../client";
 
-const Project = ({ index, gitLink, viewLink, img, description }) => {
-  let imgSrc = null;
+const Project = ({ slug, key }) => {
+  const [project, setProject] = useState(null);
 
-  switch (img) {
-    case "hello_world":
-      imgSrc = hello_world;
-      break;
-    case "plug":
-      imgSrc = plug;
-      break;
-    default:
-      imgSrc = desk;
-  }
+  useEffect(() => {
+    const getProject = async () => {
+      const data = await sanityClient.fetch(
+        `*[_type == "project" && slug.current == "${slug}"]{
+            title,
+            date,
+            place,
+            description,
+            mainImage{
+              asset->{
+                _id,
+                url
+              },
+              alt
+            },
+            link,
+            githubLink
+          }`
+      );
+      setProject(data[0]);
+    };
+    getProject();
+  }, []);
+
+  if (!project) return <></>;
 
   return (
     <div className="project-item m-2 relative sm:m-3 lg:m-4">
-      <img src={imgSrc} alt="" className="max-w-lg w-full mx-auto " />
+      <img
+        src={project.mainImage.asset.url}
+        alt=""
+        className="max-w-lg w-full mx-auto "
+      />
       <ProjectDetail
-        index={index}
-        gitLink={gitLink}
-        viewLink={viewLink}
-        description={description}
+        key={key}
+        githubLink={project.githubLink}
+        viewLink={project.link}
+        description={project.description}
       />
     </div>
   );

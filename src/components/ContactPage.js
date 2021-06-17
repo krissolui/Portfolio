@@ -14,6 +14,7 @@ const ContactPage = () => {
             <a
               href="https://github.com/krissolui"
               target="_blank"
+              rel="noreferrer"
               className="btn sns-btn"
             >
               <FaGithub className="hover:text-yellow-600" />
@@ -21,6 +22,7 @@ const ContactPage = () => {
             <a
               href="https://www.linkedin.com/in/siu-on-lui-8b8888159/"
               target="_blank"
+              rel="noreferrer"
               className="btn sns-btn"
             >
               <FaLinkedin className="hover:text-yellow-600" />

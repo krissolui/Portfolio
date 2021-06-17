@@ -19,11 +19,11 @@ const Navigation = () => {
         Education
       </NavLink>
       <NavLink
-        to="/projects"
+        to="/project"
         className="nav-item py-1 px-2.5 rounded-md hover:text-yellow-600 flex-1"
         activeClassName="text-yellow-600 bg-purple-300"
       >
-        Projects
+        Project
       </NavLink>
       <NavLink
         to="/contact"

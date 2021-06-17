@@ -41,10 +41,6 @@ const SendEmail = () => {
     setName("");
     setEmail("");
     setMsg("");
-
-    const toDefaultPage = () => {
-      return;
-    };
   };
 
   return (

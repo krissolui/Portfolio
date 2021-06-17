@@ -14,8 +14,34 @@ import {
 } from "react-icons/fa";
 import { SiJavascript, SiCplusplus, SiJquery } from "react-icons/si";
 import { GrMysql } from "react-icons/gr";
+import { useState, useEffect } from "react";
+import sanityClient from "../client";
 
 const EducationPage = () => {
+  const [author, setAuthor] = useState(null);
+  let selfLearnParagraphs = null;
+
+  useEffect(() => {
+    const getSelfLearn = async () => {
+      const data = await sanityClient.fetch(
+        `*[_type == "author"]{
+        selfLearn
+      }`
+      );
+      setAuthor(data[0]);
+    };
+    getSelfLearn();
+  }, []);
+
+  if (!author)
+    return (
+      <div className="flex-grow bg-gray-500 text-white text-2xl text-center">
+        Loading...
+      </div>
+    );
+
+  selfLearnParagraphs = author.selfLearn.split("\n");
+
   return (
     <main className="education-page flex-grow bg-gray-500 text-white p-2">
       <div className="max-w-5xl mx-auto">
@@ -48,22 +74,10 @@ const EducationPage = () => {
             </h2>
 
             <div className="self-learn-intro mb-4 md:inline-flex md:space-x-4">
-              <p className="flex-1 pb-1">
-                In my freshman year, I did not like programming and decided not
-                to major in computer science. But after taking a programming
-                course in C++, as I thought that might help my study in embeded
-                system design, I started to understand software and eventually
-                changed interest to software engineering.
-              </p>
-              <p className="flex-1">
-                During the summer of my fourth year in university, I had the
-                chance to get free online courses. I then decided to leverage
-                the opportunity and took different courses about software. I
-                tried to be exposed to as many different fields as possible,
-                from frontend web development, to data processing and
-                management, as well as the basic of software development process
-                and tools commonly used by software developers.
-              </p>
+              {selfLearnParagraphs &&
+                selfLearnParagraphs.map((paragraph) => (
+                  <p className="flex-1 pb-1">{paragraph}</p>
+                ))}
             </div>
 
             <div className="w-full text-center space-y-3 md:inline-flex md:justify-evenly md:items-start md:space-x-3 md:space-y-0">
@@ -135,6 +149,9 @@ const EducationPage = () => {
               <h3 className="text-secondary text-xl text-center font-semibold my-3 md:text-2xl md:text-left">
                 Courses Completed on Online Platforms
               </h3>
+              <p className="text-yellow-300">
+                * Full list of completed courses available in LinkedIn profile.
+              </p>
               <table className="table mx-auto rounded-xl">
                 <tbody>
                   <tr className="bg-purple-600">

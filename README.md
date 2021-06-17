@@ -1,10 +1,7 @@
-# krissolui.github.io
+# https://krislui.netlify.app/
 
-Kris Lui's Personal Website !
-
-## Subheader
-
-Hey You
+Created with React.JS, sanity and Tailwind.
+Deployed through Netlify.
 
 # Getting Started with Create React App
 

@@ -24,13 +24,15 @@ const HomePage = () => {
   if (author) bioParagraphs = author.bio.split("\n");
 
   return (
-    <main className="home-page flex-grow bg-gray-500 text-white text-center p-2 flex flex-col justify-center items-center">
-      <h3 className="text-4xl font-bold cursive text-yellow-600 sm:text-6xl">
+    <main className="home-page flex-grow bg-yellow-50 text-gray-700 text-center px-2 py-8 flex flex-col justify-center items-center">
+      <h3 className="text-4xl font-bold cursive text-yellow-500 sm:text-6xl">
         HOME
       </h3>
 
       <section className="home-item about-me">
-        <h2 className="text-secondary text-3xl font-semibold my-3">About Me</h2>
+        <h2 className="text-secondary text-3xl text-purple-800 font-semibold my-3">
+          About Me
+        </h2>
 
         <div className="max-w-5xl mx-auto md:flex items-center">
           <div>
@@ -51,7 +53,7 @@ const HomePage = () => {
 
       <div className="max-w-5xl mx-auto md:inline-flex">
         <section className="home-item intro-education w-full flex flex-col justify-between items-center md:flex-1">
-          <h2 className="text-secondary text-3xl font-semibold my-3">
+          <h2 className="text-secondary text-3xl text-purple-800 font-semibold my-3">
             Education
           </h2>
           <p className="px-2">
@@ -66,7 +68,7 @@ const HomePage = () => {
         </section>
 
         <section className="home-item intro-projectn w-full flex flex-col justify-between items-center  md:flex-1">
-          <h2 className="text-secondary text-3xl font-semibold my-3">
+          <h2 className="text-secondary text-3xl text-purple-800 font-semibold my-3">
             Project
           </h2>
           <p className="px-2">

@@ -35,7 +35,7 @@ const EducationPage = () => {
 
   if (!author)
     return (
-      <div className="flex-grow bg-gray-500 text-white text-2xl text-center">
+      <div className="flex-grow bg-yellow-50 text-gray-700 text-2xl text-center">
         Loading...
       </div>
     );
@@ -43,15 +43,15 @@ const EducationPage = () => {
   selfLearnParagraphs = author.selfLearn.split("\n");
 
   return (
-    <main className="education-page flex-grow bg-gray-500 text-white p-2">
+    <main className="education-page flex-grow bg-yellow-50 text-gray-700 px-2 py-8">
       <div className="max-w-5xl mx-auto">
-        <h3 className="text-4xl font-bold cursive text-center text-yellow-600 sm:text-6xl">
+        <h3 className="text-4xl font-bold cursive text-center text-yellow-500 sm:text-6xl">
           EDUCATION
         </h3>
 
         <section className="education-items">
           <div className="university p-1 text-center">
-            <h2 className="text-secondary text-3xl font-semibold my-3 md:text-left">
+            <h2 className="text-secondary text-3xl text-purple-800 font-semibold my-3 md:text-left">
               Formal Education
             </h2>
             <h3 className="text-secondary text-xl font-medium">
@@ -69,7 +69,7 @@ const EducationPage = () => {
           <hr className="my-2 mx-2" />
 
           <div className="self-learn p-1">
-            <h2 className="text-secondary text-3xl font-semibold text-center my-3 md:text-left">
+            <h2 className="text-secondary text-3xl font-semibold text-center text-purple-800 my-3 md:text-left">
               Self-learn
             </h2>
 
@@ -81,7 +81,7 @@ const EducationPage = () => {
             </div>
 
             <div className="w-full text-center space-y-3 md:inline-flex md:justify-evenly md:items-start md:space-x-3 md:space-y-0">
-              <div className="skillsets flex-1 border-2 border-dotted rounded-3xl pb-2">
+              <div className="skillsets flex-1 border-2 border-dotted border-gray-500 rounded-3xl pb-2">
                 <h3 className="text-secondary text-xl font-semibold underline mb-2 md:text-2xl">
                   Languages/Frameworks
                 </h3>
@@ -116,7 +116,7 @@ const EducationPage = () => {
                 </ul>
               </div>
 
-              <div className="skillsets flex-1 border-2 border-dotted rounded-3xl pb-2">
+              <div className="skillsets flex-1 border-2 border-dotted border-gray-500 rounded-3xl pb-2">
                 <h3 className="text-secondary text-xl underline font-semibold mb-2 md:text-2xl">
                   Tools/Skills
                 </h3>
@@ -146,21 +146,24 @@ const EducationPage = () => {
             </div>
 
             <div className="self-learn-courses">
-              <h3 className="text-secondary text-xl text-center font-semibold my-3 md:text-2xl md:text-left">
+              <h3 className="text-secondary text-xl text-center text-purple-800 font-semibold my-3 md:text-2xl md:text-left">
                 Courses Completed on Online Platforms
               </h3>
-              <p className="text-yellow-300">
+              <p className="text-yellow-500">
                 * Full list of completed courses available in LinkedIn profile.
               </p>
               <table className="table mx-auto rounded-xl">
                 <tbody>
-                  <tr className="bg-purple-600">
+                  <tr className="bg-purple-600 text-white">
                     <th>Course Name</th>
                     <th>Provider</th>
                     <th>Related Skills</th>
                   </tr>
                   <tr>
-                    <th colSpan="3" className="specialization bg-purple-400">
+                    <th
+                      colSpan="3"
+                      className="specialization bg-purple-300 font-semibold"
+                    >
                       Web Design for Everybody
                     </th>
                   </tr>
@@ -192,7 +195,10 @@ const EducationPage = () => {
                     <td></td>
                   </tr>
                   <tr>
-                    <th colSpan="3" className="specialization bg-purple-400">
+                    <th
+                      colSpan="3"
+                      className="specialization bg-purple-300 font-semibold"
+                    >
                       Web Applications for Everybody
                     </th>
                   </tr>
@@ -236,7 +242,10 @@ const EducationPage = () => {
                     </td>
                   </tr>
                   <tr>
-                    <th colSpan="3" className="specialization bg-purple-400">
+                    <th
+                      colSpan="3"
+                      className="specialization bg-purple-300 font-semibold"
+                    >
                       Python for Everybody
                     </th>
                   </tr>

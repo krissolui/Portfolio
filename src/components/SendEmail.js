@@ -81,7 +81,7 @@ const SendEmail = () => {
         <input
           type="submit"
           value="Send Email"
-          className="btn py-2 px-4 my-1 rounded-lg border border-purple-700 shadow-lg font-medium bg-gray-100 text-purple-700 hover:bg-purple-700 hover:text-white hover:border-gray-300"
+          className="btn py-2 px-4 my-1 rounded-lg border border-purple-700 shadow-lg font-medium bg-purple-50 text-purple-700 hover:bg-purple-700 hover:text-white hover:border-gray-300"
         />
       </form>
     </div>

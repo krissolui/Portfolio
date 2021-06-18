@@ -14,12 +14,12 @@
 }
 
 table,
-th,
-td {
-  border: 1px solid white;
+th {
+  border: 1px solid rgba(55, 65, 81);
 }
 
 td {
-  border: 1px dashed white;
+  border: solid rgba(55, 65, 81);
+  border-width: 0 1px 1px 0;
   padding: 0 0.5rem;
 }

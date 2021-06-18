@@ -3,8 +3,8 @@ import SendEmail from "./SendEmail";
 
 const ContactPage = () => {
   return (
-    <main className="home-page flex-grow bg-purple-200 text-purple-700 text-center p-2 flex flex-col justify-center items-center">
-      <h3 className="text-4xl font-bold cursive text-yellow-600 mb-4 sm:text-6xl">
+    <main className="home-page flex-grow bg-yellow-50 text-purple-700 text-center px-2 py-8 flex flex-col justify-center items-center">
+      <h3 className="text-4xl font-bold cursive text-yellow-500 mb-4 sm:text-6xl">
         CONTACT
       </h3>
 
@@ -17,7 +17,7 @@ const ContactPage = () => {
               rel="noreferrer"
               className="btn sns-btn"
             >
-              <FaGithub className="hover:text-yellow-600" />
+              <FaGithub className="hover:text-yellow-500" />
             </a>
             <a
               href="https://www.linkedin.com/in/siu-on-lui-8b8888159/"
@@ -25,7 +25,7 @@ const ContactPage = () => {
               rel="noreferrer"
               className="btn sns-btn"
             >
-              <FaLinkedin className="hover:text-yellow-600" />
+              <FaLinkedin className="hover:text-yellow-500" />
             </a>
           </div>
 

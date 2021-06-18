@@ -19,14 +19,14 @@ const ProjectPage = () => {
 
   if (!projects)
     return (
-      <div className="flex-grow bg-gray-500 text-white text-2xl text-center">
+      <div className="flex-grow bg-yellow-50 text-gray-700 text-2xl text-center">
         Loading...
       </div>
     );
 
   return (
-    <main className="home-page flex-grow bg-gray-500 text-center p-2 flex flex-col justify-center items-center">
-      <h3 className="text-4xl font-bold cursive text-yellow-600 mb-4 sm:text-6xl">
+    <main className="home-page flex-grow bg-yellow-50 text-center px-2 py-8 flex flex-col justify-center items-center">
+      <h3 className="text-4xl font-bold cursive text-yellow-500 mb-4 sm:text-6xl">
         PROJECT
       </h3>
 

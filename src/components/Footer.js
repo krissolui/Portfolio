@@ -4,7 +4,7 @@ import owl from "../images/owl.png";
 
 const Footer = () => {
   return (
-    <footer className="bg-purple-700 pt-4 pb-2 text-white text-center flex-col justify-center items-center">
+    <footer className="bg-purple-700 pt-4 pb-2 text-yellow-50 text-center flex-col justify-center items-center">
       <div className="max-w-screen-md mx-auto flex flex-col items-center md:flex-row md:justify-evenly">
         <div className="logo w-32 mx-auto md:mx-0">
           <Link to="/" exact="true" onClick={() => window.scrollTo(0, 0)}>
@@ -22,7 +22,7 @@ const Footer = () => {
               href="https://github.com/krissolui"
               target="_blank"
               rel="noreferrer"
-              className="btn sns-btn hover:text-yellow-600"
+              className="btn sns-btn hover:text-yellow-500"
             >
               <FaGithub />
             </a>
@@ -30,7 +30,7 @@ const Footer = () => {
               href="https://www.linkedin.com/in/siu-on-lui-8b8888159/"
               target="_blank"
               rel="noreferrer"
-              className="btn sns-btn hover:text-yellow-600"
+              className="btn sns-btn hover:text-yellow-500"
             >
               <FaLinkedin />
             </a>
